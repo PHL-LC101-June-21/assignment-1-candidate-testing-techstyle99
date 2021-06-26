@@ -55,6 +55,10 @@ function askForName(){
 let questions = [
   "Who was the first American woman in space?: ", 
   "True or false: 5 kilometer == 5000 meters?: ", 
+
+
+
+
   "(5 + 3)/2 * 10 = ?: ", 
   "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?: ", 
   "What is the minimum crew size for the ISS?: "
@@ -171,9 +175,8 @@ function runProgram() {
     console.log("This is Jeopardy, " + candidateName + ", Welcome and Good Luck.")
 =======
     console.log("Hello " + candidateName + ", welcome here.")
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
   
->>>>>>> 08ea8a13bdddf3d7b8326c115fce8ac2d8384ca4
+
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
@@ -192,7 +195,4 @@ module.exports = {
   gradeQuiz: gradeQuiz,
   runProgram: runProgram
 };
-<<<<<<< HEAD
 
-=======
->>>>>>> 08ea8a13bdddf3d7b8326c115fce8ac2d8384ca4
