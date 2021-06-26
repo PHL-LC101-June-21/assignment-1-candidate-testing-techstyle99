@@ -1,23 +1,16 @@
-clear
 
-
-
-
-<<<<<<< HEAD
 
 const input = require('readline-sync');
-=======
+
 // TODO 1.1a: Define candidateName // 
 let candidateName = "";
-<<<<<<< HEAD
 
-=======
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-<<<<<<< HEAD
+let candidateName = ""; 
+let candidateAnswers = [];
 
 let questions = [
   "Who was the first American woman in space? ", 
@@ -34,31 +27,17 @@ let correctAnswers = [
   "Trajectory", 
   "3"
 ];
-=======
-let questions;
-let correctAnswers;
-let candidateAnswers;
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
 
-let candidateAnswers = [];
->>>>>>> 08ea8a13bdddf3d7b8326c115fce8ac2d8384ca4
 
-let candidateName = ""; 
 function askForName(){
   candidateName = input.question("Enter your name here: "); 
-<<<<<<< HEAD
   console.log(`Hello ${candidateName}! welcome.\n`)
 } 
 
 // askForName(); 
-
 let questions = [
   "Who was the first American woman in space?: ", 
   "True or false: 5 kilometer == 5000 meters?: ", 
-
-
-
-
   "(5 + 3)/2 * 10 = ?: ", 
   "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?: ", 
   "What is the minimum crew size for the ISS?: "
@@ -79,31 +58,22 @@ function askQuestion(){
     answers.push(answer); 
     console.log(`your answer: ${answer}`); 
     console.log(`correct answer: ${correctAnswers[i]}\n`); 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-<<<<<<< HEAD
   // candidateAnswer = input.question(question)
   for (let i = 0; i < questions.length; i++){
     question = questions[i]; 
     candidateAnswer = input.question(question);
     candidateAnswers.push(candidateAnswer); 
   }
-=======
-  candidateAnswer = input.question(question)
 
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
+  candidateAnswer = input.question(question)
 }
 
 function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-<<<<<<< HEAD
   let correctAnswerCounter = 0;
   console.log("\n------------Let's see how well you have done------------")
   for (let i = 0; i < questions.length; i++) {
@@ -127,8 +97,6 @@ function gradeQuiz(candidateAnswers) {
 }
 
 // askQuestion(); 
-
-<<<<<<< HEAD
 function gradeQuiz(correctAnswers){
   let totalQuestion = questions.length
   let totalCorrectAnswers = 0; 
@@ -148,9 +116,7 @@ function gradeQuiz(correctAnswers){
       } else {
         console.log(">>> Status: Failed! <<<")
       }
-=======
   let grade;
->>>>>>> c4f0ff1edf98fdf90f2053f46e575ef70d2753a6
   
   let grade = correctAnswerCounter / questions.length * 100; 
   console.log("\n------------------ Grade Reports ------------------")
@@ -162,16 +128,15 @@ function gradeQuiz(correctAnswers){
   }
   return grade;
 >>>>>>> 08ea8a13bdddf3d7b8326c115fce8ac2d8384ca4
+        08ea8a13bdddf3d7b8326c115fce8ac2d8384ca4
 }
 
 
 function runProgram() {
   askForName();
-<<<<<<< HEAD
   console.log(`Candidate Name: ${candidateName}`)
-=======
   // TODO 1.1c: Ask for candidate's name //
-<<<<<<< HEAD
+
     console.log("This is Jeopardy, " + candidateName + ", Welcome and Good Luck.")
 =======
     console.log("Hello " + candidateName + ", welcome here.")
